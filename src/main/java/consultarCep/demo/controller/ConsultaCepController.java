@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 @Controller // utilizado para lidar com paginas estáticas ( @restcontroller para dados )
-@RequestMapping("/") // rota inicial para nao ficar colocando "/" depois nos gets
+
 public class ConsultaCepController {
 
-    @GetMapping("cep") // rota criada
+    @GetMapping("/") // rota criada
     public String page() { // declara para puxar o html
         return "cep";
     }
